@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+html,
+body {
+	overflow-x: hidden
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: #393939;
+	color: #fff;
+}
+
+a {
+	color: #fff !important;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fbfbfb !important;
+}
+
+input[type=text] {
+  background-color: #3a3a3a;
+	border-color: rgba(255, 255, 255, .55);
+  color: white !important;
+}
+
+input[type=text]:focus {
+  background-color: #3a3a3a;
+	border-color: #fff;
+}
+
+::selection {
+  color: #000;
+  background: #488999;
+}
+
+/* 
+------------------------------------------- 
+	UTILITY 
+-------------------------------------------
+*/
+.text-fade-1 {
+	color: rgba(255, 255, 255, .55);
+}
+
+.btn-sabmit {
+	color: #fff;
+	background-color: transparent;
+	border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-sabmit:hover {
+	color: #fff;
+	background-color: transparent;
+	border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.leading-tight {
+	line-height: 1.25;
+}
+
+.leading-snug {
+	line-height: 1.375;
+}
+
+.leading-normal {
+	line-height: 1.5;
+}
+
+.leading-relaxed {
+	line-height: 1.625;
+}
+
+.leading-loose {
+	line-height: 2;
+}
+
+.v-invisible {
+	visibility: hidden;
+}
+
+.ls-5px {
+	letter-spacing: 5px;
+}
+
+.display-3 {
+	font-size: calc(1.525rem + 3.3vw) !important;
+}
+
+.fs-7 {
+	font-size: 0.75rem;
+}
+
+.fw-bolder {
+	font-weight: 900 !important;
+}
+
+.fw-medium {
+	font-weight: 600;
+}
+
+.p-8 {
+	padding: 7.5rem;
+}
+
+.pe-6 {
+	padding-right: 4.5rem;
+}
+
+.mp-0 {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.min-vh-200 {
+	height: 200vh;
+}
+
+.min-vh-80 {
+	min-height: 80vh;
+}
+
+.min-vh-50 {
+	min-height: 50vh;
+}
+
+.text-blue {
+	color: #488999 !important;
+}
+
+.z-999 {
+	z-index: 999;
+}
+
+.shadow-1::before {
+	content: '';
+	position: absolute;
+	bottom: -1%;
+	left: 10%;
+	width: 80%;
+	height: 80%;
+	background: rgba(0, 0, 0, 0.3);
+	z-index: -1;
+	filter: blur(10px);
+}
+
+.text-border-bottom::after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 4rem;
+	border-bottom: 4px solid #fff;
+	z-index: 0;
+	margin-top: 0.8rem;
+}
+
+.text-border-bottom-center.gray::after {
+	content: '';
+	display: block;
+	width: 20%;
+	border-bottom: 3px solid rgba(255, 255, 255, .55);
+	z-index: 0;
+	margin: auto;
+	padding-top: .8rem;
+}
+
+.text-border-bottom-center.gray.gap::after {
+	content: '';
+	padding-top: 1.5rem;
+}
+
+.bg-gray {
+	background-color: #2E2E2E;
+}
+
+/* 
+------------------------------------------- 
+	NAVBAR
+-------------------------------------------
+*/
+.navbar.fixed-top.scrolled {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  transition: background-color 200ms linear;
+}
+
+.navbar-brand.scrolled {
+	color: #fff !important;
+  transition: background-color 200ms linear;
+}
+
+.nav-link {
+	letter-spacing: 5px;
+}
+
+.nav-link.line {
+	border: 2px solid #fff;
+}
+
+.navbar-brand {
+	color: #393939 !important;
+}
+
+
+/* 
+------------------------------------------- 
+	SECTION 1 
+-------------------------------------------
+*/
+.bg-image-1 {
+	background-image: url(../image/bg-1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+/* 
+------------------------------------------- 
+	SECTION 3 
+-------------------------------------------
+*/
+.img-articles {
+	height: 500px;
+	object-fit: cover;
+}
+
+/* 
+------------------------------------------- 
+	BREAKPOINT
+-------------------------------------------
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	.bg-title-1 {
+		background-color: #E7E9E6;
+		width: 100%;
+		height: 33.3%;
+	}
+
+	.position-xl-absolute {
+		position: absolute !important;
+	}
+
+	.top-xl-50 {
+		top: 50% !important;
+	}
+
+	.start-xl-0 {
+		left: 0 !important
+	}
+
+	.translate-xl-middle-y {
+		transform: translateY(-50%) !important;
+	}
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+	.h-xxl-75 {
+		height: 75% !important;
+	}
+}
