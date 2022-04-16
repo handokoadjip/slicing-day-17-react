@@ -52,7 +52,7 @@ const index = () => {
                             <img
                               className="img-fluid w-100 img-articles"
                               src={list.image}
-                              alt="article-1"
+                              alt={`article-${index}`}
                             />
                             <figcaption className="w-100 pb-5 text-uppercase text-center position-absolute bottom-0 start-50 translate-middle-x">
                               <h3 className="mp-0">{list.title}</h3>
